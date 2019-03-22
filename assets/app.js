@@ -2,11 +2,20 @@ let piData, output;
 // let numDig = 100;
 const numbers = Array.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
 
+/*Bugs to fix/todos:
+
+
+****1-need to make reset() to handle another entry
+****2-need to make it so if enter button pushed also performs function
+****3-if the number is less than where all digits appear, the digits get to the proper place on table
+
+*/
+
 //take all digits and output
 makeTable();
 //click event for data retrieval/API with async function
 $("#submit").on("click", function() {
-  $("document").refresh();
+//   $("document").refresh();
   let holder = $("#userInput").val();
   let numDig = parseInt(holder, 10);
 
